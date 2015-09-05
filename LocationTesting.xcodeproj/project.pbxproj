@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3F4DEE1B976B44007DA3A6 /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4DED1B976B44007DA3A6 /* NotificationFactory.swift */; };
 		0A6B742B1B9667DF00DCE792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B742A1B9667DF00DCE792 /* AppDelegate.swift */; };
 		0A6B742D1B9667DF00DCE792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B742C1B9667DF00DCE792 /* ViewController.swift */; };
 		0A6B74301B9667DF00DCE792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B742E1B9667DF00DCE792 /* Main.storyboard */; };
 		0A6B74321B9667DF00DCE792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B74311B9667DF00DCE792 /* Assets.xcassets */; };
-		0A6B74351B9667DF00DCE792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B74331B9667DF00DCE792 /* LaunchScreen.storyboard */; };
 		0A6B74401B9667DF00DCE792 /* LocationTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B743F1B9667DF00DCE792 /* LocationTestingTests.swift */; };
 		0A6B744B1B9667DF00DCE792 /* LocationTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B744A1B9667DF00DCE792 /* LocationTestingUITests.swift */; };
+		0ACC7EB61B97BD0B00F372E5 /* NotificationFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC7EB51B97BD0B00F372E5 /* NotificationFactoryTests.swift */; };
+		0ACC7EB71B97BE1700F372E5 /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4DED1B976B44007DA3A6 /* NotificationFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3F4DED1B976B44007DA3A6 /* NotificationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationFactory.swift; sourceTree = "<group>"; };
 		0A6B74271B9667DF00DCE792 /* LocationTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6B742A1B9667DF00DCE792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A6B742C1B9667DF00DCE792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A6B742F1B9667DF00DCE792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A6B74311B9667DF00DCE792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A6B74341B9667DF00DCE792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A6B74361B9667DF00DCE792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6B743B1B9667DF00DCE792 /* LocationTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6B743F1B9667DF00DCE792 /* LocationTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestingTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		0A6B74461B9667DF00DCE792 /* LocationTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6B744A1B9667DF00DCE792 /* LocationTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestingUITests.swift; sourceTree = "<group>"; };
 		0A6B744C1B9667DF00DCE792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACC7EB51B97BD0B00F372E5 /* NotificationFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +104,8 @@
 				0A6B742C1B9667DF00DCE792 /* ViewController.swift */,
 				0A6B742E1B9667DF00DCE792 /* Main.storyboard */,
 				0A6B74311B9667DF00DCE792 /* Assets.xcassets */,
-				0A6B74331B9667DF00DCE792 /* LaunchScreen.storyboard */,
 				0A6B74361B9667DF00DCE792 /* Info.plist */,
+				0A3F4DED1B976B44007DA3A6 /* NotificationFactory.swift */,
 			);
 			path = LocationTesting;
 			sourceTree = "<group>";
@@ -112,6 +115,7 @@
 			children = (
 				0A6B743F1B9667DF00DCE792 /* LocationTestingTests.swift */,
 				0A6B74411B9667DF00DCE792 /* Info.plist */,
+				0ACC7EB51B97BD0B00F372E5 /* NotificationFactoryTests.swift */,
 			);
 			path = LocationTestingTests;
 			sourceTree = "<group>";
@@ -228,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6B74351B9667DF00DCE792 /* LaunchScreen.storyboard in Resources */,
 				0A6B74321B9667DF00DCE792 /* Assets.xcassets in Resources */,
 				0A6B74301B9667DF00DCE792 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +260,7 @@
 			files = (
 				0A6B742D1B9667DF00DCE792 /* ViewController.swift in Sources */,
 				0A6B742B1B9667DF00DCE792 /* AppDelegate.swift in Sources */,
+				0A3F4DEE1B976B44007DA3A6 /* NotificationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6B74401B9667DF00DCE792 /* LocationTestingTests.swift in Sources */,
+				0ACC7EB61B97BD0B00F372E5 /* NotificationFactoryTests.swift in Sources */,
+				0ACC7EB71B97BE1700F372E5 /* NotificationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +304,6 @@
 				0A6B742F1B9667DF00DCE792 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A6B74331B9667DF00DCE792 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A6B74341B9667DF00DCE792 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -396,7 +394,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocationTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoku.LocationTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,7 +410,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocationTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoku.LocationTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +427,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LocationTestingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoku.LocationTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +440,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LocationTestingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoku.LocationTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +491,7 @@
 				0A6B74511B9667DF00DCE792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6B74521B9667DF00DCE792 /* Build configuration list for PBXNativeTarget "LocationTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +500,7 @@
 				0A6B74541B9667DF00DCE792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6B74551B9667DF00DCE792 /* Build configuration list for PBXNativeTarget "LocationTestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +509,7 @@
 				0A6B74571B9667DF00DCE792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

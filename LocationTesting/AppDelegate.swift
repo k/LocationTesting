@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
   var window: UIWindow?
+  let locationManager = CLLocationManager();
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    locationManager.delegate = self
+    locationManager.requestAlwaysAuthorization()
+    
+    application .registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert, categories: nil))
+    
+    if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
+      startMonitoringLocation()
+    }
     return true
   }
 
@@ -40,7 +50,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
+  
+  func startMonitoringLocation() {
+    locationManager.startMonitoringSignificantLocationChanges()
+    locationManager.startMonitoringVisits()
+  }
+  
+  // MARK: CLLocationManagerDelegate functions
+  
+  func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    if (status != CLAuthorizationStatus.AuthorizedAlways) {
+      UIApplication.sharedApplication().presentLocalNotificationNow(NotificationFactory.localNotif("Need to allow location always", body: "Go to Settings -> Privacy -> Location and update LocationTesting to \"Always\""))
+    } else {
+      self.startMonitoringLocation()
+    }
+  }
+  
+  func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    UIApplication.sharedApplication().presentLocalNotificationNow( NotificationFactory.localNotifForSignificantChange(locations.last as! CLLocation))
+  }
+  
+  func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    UIApplication.sharedApplication().presentLocalNotificationNow(NotificationFactory.localNotifForRegionUpdate(region as! CLCircularRegion, state: CLRegionState.Inside))
+  }
+  
+  func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+    manager.stopMonitoringForRegion(region)
+    UIApplication.sharedApplication().presentLocalNotificationNow(NotificationFactory.localNotifForRegionUpdate(region as! CLCircularRegion, state: CLRegionState.Outside))
+  }
+  
+  func locationManager(manager: CLLocationManager, didVisit visit: CLVisit) {
+    UIApplication.sharedApplication().presentLocalNotificationNow(NotificationFactory.localNotifForVisit(visit))
+    if !CLLocationManager.isMonitoringAvailableForClass(CLCircularRegion) {
+      UIApplication.sharedApplication().presentLocalNotificationNow( NotificationFactory.localNotif("Region Monitoring not available", body: "Region monitoring is not available on this device"))
+      return;
+    }
+    let region = CLCircularRegion(center: visit.coordinate, radius: 30, identifier: "Visit Exit Region")
+    manager.startMonitoringForRegion(region)
+  }
 
 }
 

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import LocationTesting
+import LocationTesting
 
 class LocationTestingTests: XCTestCase {
     
